@@ -1,4 +1,6 @@
-package employeeApp;
+package com.workintech.employeeApp.model;
+
+import com.workintech.employeeApp.enums.Plan;
 
 public class Healthplan {
     private long id;
@@ -40,7 +42,7 @@ public class Healthplan {
 
     @Override
     public String toString() {
-        return "Healthplan of " + name + " with id number: " + id + "is " + "plan";
+        return "Healthplan of " + name + " with id number: " + id + " is using plan " + plan.getName() ;
     }
 }
 
