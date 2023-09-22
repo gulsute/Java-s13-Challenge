@@ -2,6 +2,7 @@ package com.workintech.employeeApp;
 
 
 import com.workintech.employeeApp.enums.Plan;
+import com.workintech.employeeApp.model.Company;
 import com.workintech.employeeApp.model.Employee;
 import com.workintech.employeeApp.model.Healthplan;
 
@@ -30,6 +31,17 @@ public class Main {
 
         System.out.println(Arrays.toString(employee.getHealthPlans()));
 
+        Employee developer = new Employee(3, "Gulsu", healthPlans);
+        String[] developerNames = new String[5];
+        developerNames[0] = developer.getFullName();
+
+        System.out.println("**************");
+        Company company = new Company(1, "Workintech", 100000000, developerNames);
+        company.addEmployee(0, "Anıl");
+        company.addEmployee(5, "Anıl");
+        company.addEmployee(1, "Anıl");
+
+        System.out.println(company);
 
     }
 }
