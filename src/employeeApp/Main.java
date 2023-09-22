@@ -24,8 +24,7 @@ public class Main
      * @param args bu uygulamada kullanılmamaktadır. Command Line üzerinden argüman alan
      *             bir uygulamamız olsaydı kullanılacaktı.
      */
-    public static void main(String[] args)
-    {
+    /*public static void main(String[] args) {
         workWithData();
-    }
+    }*/
 }
